@@ -55,7 +55,7 @@ function cariFilm() {
                             </div>`);
                     }
                 });
-            };
+            }
 
             // Modal
             $(document).on('click', '.detail-film', function () {
@@ -88,14 +88,14 @@ function cariFilm() {
                                 <p>Aktor: ` + detail.Actors + `</p>
                                 <p>Tahun: ` + detail.Year + `</p>
                             </div>`);
-                    };
+                    }
                 });
             });
         } else {
             $('.hasil-pencarian').append(`<div class="alert text-center alert-danger" role="alert">Maaf, Film Tidak Ditemukan</div>`);
         }
     });
-};
+}
 
 // Ketika tombol enter ditekan
 $('.input-value').keypress(function (nomor) {
